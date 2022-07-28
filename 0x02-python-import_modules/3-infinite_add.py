@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+from sys import argv
 if __name__ == "__main__":
-    from sys import argv
-    sum_var = 0
-    for i in range(1, len(argv)):
-        sum_var += int(argv[i])
-    print("{}".format(sum_var))
+    n = 0
+    for i in range(len(argv) - 1):
+        n += int(argv[i + 1])
+    print("{:d}".format(n))
